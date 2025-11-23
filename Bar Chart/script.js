@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         .attr("class", "bar")
         .attr("data-date", (d) => d[0])
         .attr("data-gdp", (d) => d[1])
-        .attr("x", (d) => xScale(d[0])) // <- fix here
+        .attr("x", (d) => xScale(d[0]))
         .attr("y", (d) => yScale(d[1]))
         .attr("width", xScale.bandwidth())
         .attr("height", (d) => h - padding - yScale(d[1]))
